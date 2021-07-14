@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Happiness Index</title>
+</head>
+<h1><center>Happiness Index</center></h1>
+<br>
+<body>
+{% for i in all_data %}
+country Name: {{i.Country_name}}<br>
+Rank:{{i.id}}<br>
+Ladder Score:{{i.Ladder_score}} <br>
+healthyLifeExpectancy:{{i.Healthy_life_expectancy}}<br>
+generosity:{{i.Generosity}}<br>
+gdp:{{i.Logged_GDP_per_capita}}<br><br>
+{% endfor %}
+</body>
+</html>
